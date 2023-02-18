@@ -5,12 +5,12 @@ import { HomePage } from './components/pages/homepage/homepage.component';
 import { Route, Switch, Redirect } from 'react-router-dom'
 import ShopPage from './components/pages/shop/shop.component';
 import Header from './components/header/header.component';
-import CheckoutPage from './components/pages/checkout/checkout.component';
 import SignInAndSignUp from './components/pages/sign-in-and-sign-up/sign-ins-and-sign-up.component';
 import Footer from './components/pages/homepage/footer.component';
 import { auth, createUserProfileDocument } from './firebase/firebase.utils';
 
 import {createStructuredSelector} from 'reselect'
+import AdsAnalytics from './components/pages/dashboard/AdsAnalytics.component';
 
 import { connect } from 'react-redux'
 import { setCurrentUser } from './redux/user/user.actions';
@@ -55,8 +55,8 @@ class App extends React.Component {
       <Switch>
         <Route exact path='/' component={HomePage}/>
         <Route path="/shop" component={ShopPage}/>
+        <Route exact path="/analytics" component={AdsAnalytics}/>
         <Route exact path="/signin" render={() => this.props.currentUser ? (<Redirect to="/" />) : (<SignInAndSignUp/>)}/>
-        <Route exact path="/checkout" component={CheckoutPage}/>
       </Switch>
 
       <Footer/>

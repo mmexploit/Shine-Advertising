@@ -1,14 +1,19 @@
 .footer {
     display: flex;
     height: auto;
+    height: 60vh;
     align-items: center;
-    background: linear-gradient(57.43deg, #4E3682 49.45%, #453682 57.47%, rgba(133, 29, 215, 0.536821) 66.9%);
+    background: linear-gradient(180deg, #FFA001 0%, #FFD821 100%);
     flex-direction: column;
 }
 
 .footer-logo {
     padding: 2em;
     width: fit-content;
+}
+
+.email {
+    font-weight: 500;
 }
 
 .telegram-container {
@@ -20,8 +25,12 @@
     width: fit-content;
 }
 
+.phone {
+    font-weight: 600;
+}
+
 .telegram-tag {
-    color: white;
+    color: black;
     font-size: 1rem;
     font-weight: 700;
 }

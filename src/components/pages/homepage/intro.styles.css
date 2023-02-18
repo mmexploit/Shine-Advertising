@@ -1,13 +1,15 @@
 .intro {
     height: auto;
     width: 100%;
-    background: linear-gradient(57.43deg, #4E3682 49.45%, #453682 57.47%, rgba(133, 29, 215, 0.536821) 66.9%);
+    background: linear-gradient(84.65deg, rgba(253, 206, 42, 0.82) 44.88%, rgba(253, 206, 42, 0.82) 95.17%);
     background-position: center;
     display: grid;
     grid-template-columns: minmax(1em, 10%) 30ch auto;
     color: white;
-    -webkit-clip-path: polygon(0 0, 100% 0, 100% 79%, 0 100%);
-    clip-path: polygon(0 0, 100% 0, 100% 79%, 0 100%);
+}
+
+.light {
+    color: white;
 }
 
 
@@ -15,16 +17,20 @@
 .intro-title {
     margin-top: 1.5em;
     padding: 0;
-    color: white;
-    font-size: 2rem;
-    grid-column: 2 / 3;
+    color: rgb(1, 0, 0);
+    font-size: 3rem;
+    grid-column: 2 / 4;
+    grid-row: 1;
 }
 
 .intro-subtitle {
     grid-column: 2 / 3;
     grid-row: 2;
-    margin-top: 4em;
-    font-size: 1.2rem;
+    margin-top: -2em;
+    font-size: -7rem;
+    /* margin-top: 4em;
+    font-size: 1.2rem; */
+    color: black;
 }
 
 .intro-desc {
@@ -38,12 +44,13 @@
     grid-column: 3 / 4;
     grid-row: 1 / 3;
     justify-self: center;
+    margin-top: 6em;
     align-self: center;
     color: white;
     background-color: white;
     width: 450px;
     height: 350px;
-    background: url("../../../assets/open-sign.png");
+    background: url("../../../assets/model.png");
     background-position: center;
     background-size:contain;
     background-repeat: no-repeat;
@@ -52,6 +59,7 @@
 #sign-up-button {
     grid-column: 2 / 3;
     margin-bottom: 5.4em;
+    grid-row: 2;
     z-index: 5;
 }
 
@@ -175,7 +183,7 @@
     .intro {
         height: auto;
         grid-template-columns: minmax(1em, 10%) 30ch auto;
-        background: linear-gradient(57.43deg, #4E3682 49.45%, #453682 57.47%, rgba(133, 29, 215, 0.536821) 66.9%);
+        background: linear-gradient(146.7deg, #FFE031 43.54%, #FDD750 59.47%);
         max-width: 100%;
         -webkit-clip-path: polygon(0 0, 100% 0, 100% 94%, 0 100%);
         clip-path: polygon(0 0, 100% 0, 100% 94%, 0 100%);
@@ -183,6 +191,7 @@
 
     .intro-title {
         margin-top: .9em;
+        grid-column: 2 / 3;
     }
 
     .intro-desc {
@@ -190,15 +199,14 @@
     }
 
     .intro-subtitle {
-        margin-top: 5em;
+        margin-top: 15em;
     }
 
     .open {
         grid-column: 2 / 3 ;
         grid-row: 3;
         max-width: 100%;
-        filter: blur(1px);
-        margin-top: -6.5em;
+        margin-top: -33.5em;
         z-index: 0;
     }
 

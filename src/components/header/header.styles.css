@@ -11,7 +11,7 @@
     position: sticky;
     top: 0;
     z-index: 1000;
-    background: linear-gradient(81.7deg, #4F3782 27.64%, #9160C6 67.47%, #BD85E9 83.82%);
+    background: linear-gradient(90deg, #FEE12B 15%, #FED947 43.95%);
     /* height: 5em; */
 }
 
@@ -60,7 +60,7 @@ li {
             display: none;
             position: absolute;
             inset: 4em 1em auto;
-            background: white;
+            background: linear-gradient(180deg, #FFA001 0%, #FFD821 100%);;
             padding: 2em 0 2em 0;
             border: 3px solid #4F3782;
             border-radius: 1em;
@@ -115,6 +115,7 @@ li {
     .logo {
         width: 100%;
         height: 100%;
+        margin: 13px;
     }
 }
 

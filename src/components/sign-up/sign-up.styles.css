@@ -1,8 +1,8 @@
 .sign-up {
-    background: linear-gradient(136.46deg, #4A3C81 51.29%, rgba(77, 24, 140, 0.781425) 76.62%);
+    background: linear-gradient(180deg, #FFA001 0%, #FFD821 100%);;
     width: 38vw;
     padding: 50px;
-    color: white;
+    color: black;
     border-radius: 10px;
     box-shadow: 10px 8px 8px black;
     /* margin-left: 6em; */

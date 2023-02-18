@@ -1,0 +1,28 @@
+.analytics-page {
+    line-height: 1.4;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+
+.cards {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 2em;
+    padding: 3em;
+    background: linear-gradient(180deg, #FFA001 0%, #FFD821 100%);
+    border-radius: 1em;
+    width: 90%;
+}
+
+.impression-title {
+    font-weight: 700;
+    font-size: 1.4rem;
+}
+
+.analytic-content {
+    margin-left: 1.2em;
+}
