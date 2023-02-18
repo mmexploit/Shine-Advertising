@@ -3,6 +3,8 @@ import React, { useState, useEffect, useCallback } from "react";
 import "./AdsAnalytics.styles.css"
 import { Loader } from "@mantine/core";
 
+require('dotenv').config()
+
 const AdsAnalytics = ({location}) => {
   const [analytics, setAnalytics] = useState(null);
   const [fetchData, setFetchData] = useState(true);
@@ -11,7 +13,9 @@ const AdsAnalytics = ({location}) => {
 
   console.log({adContent})
 
-  const accessToken = 'EAAMgTox8EFwBAFZAjKrTZCh9NbowSzxLHZCdkQJYLvhoQgkXfcojPq9gZAEZBoHmZAWShq0cHFZCBYZBveuhPGKrpcAhWRP35Ib8E3jQ70JtQkkqL7TXrUZBkcnowwtZBVmx1iaVehtCgpzHkEmZBgvdeZAuaR7oUUwZCTqHCrZAyXkXFoVPatQFrQURvnVYEFA0oPULGhbWeHXe1gJ4tKF9Gm4bpR';
+  const accessToken = process.env.REACT_APP_ACCESS_TOKEN;
+
+  console.log(accessToken)
   const adObjectId = adContent
   const apiUrl = `https://graph.facebook.com/v16.0/${adObjectId}/insights?fields=impressions,clicks,reach,spend,cpp&time_range={"since":"2022-11-01","until":"2022-12-31"}&access_token=${accessToken}`;
 
