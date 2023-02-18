@@ -15,7 +15,6 @@ const AdsAnalytics = ({location}) => {
 
   const accessToken = process.env.REACT_APP_ACCESS_TOKEN;
 
-  console.log(accessToken)
   const adObjectId = adContent
   const apiUrl = `https://graph.facebook.com/v16.0/${adObjectId}/insights?fields=impressions,clicks,reach,spend,cpp&time_range={"since":"2022-11-01","until":"2022-12-31"}&access_token=${accessToken}`;
 
