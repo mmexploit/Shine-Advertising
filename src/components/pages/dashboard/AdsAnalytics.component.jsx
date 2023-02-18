@@ -11,7 +11,7 @@ const AdsAnalytics = ({location}) => {
 
   console.log({adContent})
 
-  const accessToken = 'EAAMgTox8EFwBANyzfXZAMIqHL3oPSptivYxN8weToZAzfMcvZB92JHcoYMEBZBNUhrrWr8ObSvnTqnAyDZChlzJHNnjS8liUa9epZB13VqfiCa0z7XXy4dj5BlLIIZATW9ZC3MTZAAMU2JdLbTFgHYzLeCUjG21GViGtWamTeZChDC8wZDZD';
+  const accessToken = 'EAAMgTox8EFwBAJnqN77PhuSp7KzDZCaxb1eyuyYxIwDZCV5GBirPTb3Spr8OxXQKZB7hfaT8elU0zsvJ62s9zP47JXMuALXfZBwQDjgZCw1uZBsoZAj2sjZAIIjPqi41FZByqE0AUYce4f8pkrTHe3OMGXqli5tt6hIFK2FewAYj7k0UlWALFZBKm5YK57TRlusOfxZBVATWFa9VHZCZAiaOwKZCSL';
   const adObjectId = adContent
   const apiUrl = `https://graph.facebook.com/v16.0/${adObjectId}/insights?fields=impressions,clicks,reach,spend,cpp&time_range={"since":"2022-11-01","until":"2022-12-31"}&access_token=${accessToken}`;
 
