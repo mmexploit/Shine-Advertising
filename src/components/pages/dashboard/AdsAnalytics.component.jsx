@@ -43,7 +43,7 @@ const AdsAnalytics = ({location}) => {
     <div className="analytics-page">
       <h2>Detailed Ad Analytics</h2>
       <p className="analytic-content">Below is a detailed analytics for the ad you selected with ID of {adContent}:</p>
-      <div className="cards">
+      <div className="cards reveal">
         <p className="impression-title">Reach</p>
         <Button color="dark">{analytics.data[0].reach} People</Button>
         <p className="impression-content">Reach is
@@ -52,7 +52,7 @@ const AdsAnalytics = ({location}) => {
           metric is estimated.</p>
       </div>
 
-      <div className="cards">
+      <div className="cards reaveal">
         <p className="impression-title">Impressions</p>
         <Button color="dark">{analytics.data[0].impressions}</Button>
         <p className="impression-content">Impressions are
@@ -60,7 +60,7 @@ const AdsAnalytics = ({location}) => {
           about your Page entered a person's screen.</p>
       </div>
 
-      <div className="cards">
+      <div className="cards reveal">
         <p className="impression-title">Engagement(Clicks)</p>
         <Button color="dark">{analytics.data[0].clicks}</Button>
         <p className="impression-content">When a person clicks
@@ -69,7 +69,7 @@ const AdsAnalytics = ({location}) => {
          cases, are brought directly to your website from that ad.</p>
       </div>
 
-      <div className="cards">
+      <div className="cards reveal">
         <p className="impression-title">CPP</p>
         <Button color="dark">{analytics.data[0].cpp}</Button>
         <p className="impression-content">The average cost 
@@ -77,7 +77,7 @@ const AdsAnalytics = ({location}) => {
         metric is estimated.</p>
       </div>
 
-      <div className="cards">
+      <div className="cards reveal">
         <p className="impression-title">Total Spent</p>
         <Button color="dark">${analytics.data[0].spend}</Button>
         <p className="impression-content">Total Amount spent to run
